@@ -8291,6 +8291,8 @@ var pdfjsWebLibs;
       }
       PDFPrintService.prototype = {
         layout: function () {
+          console.log('我们不支持打印');
+          return false;
           var pdfDocument = this.pdfDocument;
           var printContainer = this.printContainer;
           var body = document.querySelector('body');
